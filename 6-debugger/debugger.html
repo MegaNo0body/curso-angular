@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Curso AngularJS - Debugger</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+// Fazemos a execução parar o depurador usando a palavra reservada 'debugger'.
+debugger;
+
+// Vamos breakpointar
+for(var i = 0; i < 100; i++) {
+	if(i % 2 == 0) {
+		console.log(i + ' é par');
+	} else {
+		console.log(i + ' é impar');
+	}
+	// Condicional para >40
+}
+
+
+		</script>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Curso AngularJS - Controle de Fluxo JS</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+function pode_beber() {
+	var idade = 20;
+	if( idade >= 18 ) {
+		console.log('Quando se tem ' + idade + ' anos, você pode beber cerveja');
+	} else {
+		console.log('Quando se tem ' + idade + ' anos, você NÃO pode beber cerveja (uhh inocente..)');
+	}
+}
+
+function entregar_30_cartas() {
+	console.log('Entregando a carta N. ' + 1);
+	console.log('Entregando a carta N. ' + 2);
+	console.log('Entregando a carta N. ' + 3);
+	console.log('Entregando a carta N. ' + 4);
+	console.log('Entregando a carta N. ' + 5);
+	console.log('Entregando a carta N. ' + 6);
+	console.log('Entregando a carta N. ' + 7);
+	console.log('Entregando a carta N. ' + 8);
+	console.log('Entregando a carta N. ' + 9);
+	console.log('Entregando a carta N. ' + 10);
+	console.log('Entregando a carta N. ' + 11);
+	console.log('Entregando a carta N. ' + 12);
+	console.log('Entregando a carta N. ' + 13);
+	console.log('Entregando a carta N. ' + 14);
+	console.log('Entregando a carta N. ' + 15);
+	console.log('Entregando a carta N. ' + 16);
+	console.log('Entregando a carta N. ' + 17);
+	console.log('Entregando a carta N. ' + 18);
+	console.log('Entregando a carta N. ' + 19);
+	console.log('Entregando a carta N. ' + 20);
+	console.log('Entregando a carta N. ' + 21);
+	console.log('Entregando a carta N. ' + 22);
+	console.log('Entregando a carta N. ' + 23);
+	console.log('Entregando a carta N. ' + 24);
+	console.log('Entregando a carta N. ' + 25);
+	console.log('Entregando a carta N. ' + 26);
+	console.log('Entregando a carta N. ' + 27);
+	console.log('Entregando a carta N. ' + 28);
+	console.log('Entregando a carta N. ' + 29);
+	console.log('Entregando a carta N. ' + 30);
+}
+
+function fazer_6_biscoitos() {
+	var biscoitos = 6;
+	while(biscoitos > 0) {
+		console.log('Fazendo um biscoito');
+		biscoitos = biscoitos - 1;
+	}
+}
+
+function fazer_20_bolachas() {
+	var bolachas;
+	bolachas = 0;
+
+	do {
+		console.log('Fazendo uma bolacha');
+		bolachas = bolachas + 1;
+	} while(bolachas < 20);
+}
+
+pode_beber();
+entregar_30_cartas();
+fazer_6_biscoitos();
+fazer_20_bolachas();
+
+
+		</script>
+	</body>
+</html>
