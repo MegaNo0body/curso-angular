@@ -6,19 +6,39 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-// Fazemos a execução parar o depurador usando a palavra reservada 'debugger'.
+
+var pikachu = {
+	"nome": "Pikachu",
+	"idade": 17,
+	"poderes": ["raio", "trovão"]
+};
+
+(function() {
+// Fazer um breakpoint programaticamente
 debugger;
 
-// Vamos breakpointar
+console.log("Log");
+console.info("Info");
+console.warn("Warn");
+console.error("Error");
+
+var frutas = ["Abacaxi", "Morango", "Banana"]; 
+console.table(frutas);
+
+
+// Criando breakpoint
+console.group('Par ou impar');
 for(var i = 0; i < 100; i++) {
 	if(i % 2 == 0) {
 		console.log(i + ' é par');
 	} else {
 		console.log(i + ' é impar');
 	}
-	// Condicional para >40
+	// Criando breakpoint condicional para >40
 }
+console.groupEnd('Par ou impar');
 
+})()
 
 		</script>
 	</body>

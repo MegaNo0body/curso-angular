@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Curso AngularJS - Esconde JS</title>
+	</head>
+	<body>
+		Digite sua idade em anos: <input type="text" id="idade"/>
+		<div id="permissao" style="display: none">
+			Você tem permissão para dirigir! E pode beber vodka! =]
+		</div>
+		<div id="sempermissao" style="display: none">
+			Você NÃO tem permissão para dirigir! Mas já pode tomar leite.
+		</div>
+		<script type="text/javascript">
+
+var campo_idade = document.getElementById('idade');
+campo_idade.onchange = function() {
+	var idade = campo_idade.value;
+	var permissao = document.getElementById('permissao');
+	var sempermissao = document.getElementById('sempermissao');
+	if(idade > 18) {
+		permissao.style.display = '';
+		sempermissao.style.display = 'none';
+	} else {
+		permissao.style.display = 'none';
+		sempermissao.style.display = '';
+	}
+}
+
+		</script>
+	</body>
+</html>

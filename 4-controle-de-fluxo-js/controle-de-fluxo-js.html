@@ -67,10 +67,25 @@ function fazer_20_bolachas() {
 	} while(bolachas < 20);
 }
 
+function dar_9_pulos() {
+	for(var pulo = 0; pulo < 9; pulo++) {
+		console.log('Pulando..');
+	}
+}
+
+function comprar_frutas() {
+	var frutas = ["Banana", "Abacaxi", "Morango"];
+	for(var fruta in frutas) {
+		console.log('Comprando ' + frutas[fruta]);
+	}
+}
+
 pode_beber();
 entregar_30_cartas();
 fazer_6_biscoitos();
 fazer_20_bolachas();
+dar_9_pulos();
+comprar_frutas();
 
 
 		</script>
