@@ -9,10 +9,10 @@
 	<body>
 		<div ng-controller="DirigirController">
 			Digite sua idade em anos: <input type="text" ng-model="idade"/>
-			<div ng-show="pode-dirigir">
+			<div ng-show="idade >= 18">
 				Você tem permissão para dirigir! E pode beber vodka! =]
 			</div>
-			<div ng-hide="pode-dirigir">
+			<div ng-hide="idade >= 18">
 				Você NÃO tem permissão para dirigir! Mas já pode tomar leite.
 			</div>
 		</div>
